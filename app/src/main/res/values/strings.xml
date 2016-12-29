@@ -18,4 +18,7 @@
     <string name="prompt_ip">Server ip</string>
     <string name="prompt_port">Server port</string>
     <string name="title_activity_chat">ChatActivity</string>
+    <string name="message">Message</string>
+    <string name="send">Send</string>
+    <string name="action_save_server">Save</string>
 </resources>

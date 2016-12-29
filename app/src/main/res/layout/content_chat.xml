@@ -13,4 +13,44 @@
     tools:context="android.infuzion.chat.ChatActivity"
     tools:showIn="@layout/activity_chat">
 
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:elevation="0dp"
+        android:text="@string/send" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/messageText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/sendButton"
+        android:fillViewport="false"
+        android:isScrollContainer="true"
+        android:scrollbarStyle="insideOverlay">
+
+
+        <LinearLayout
+            android:id="@+id/linLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/messageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/sendButton"
+        android:ems="10"
+        android:imeOptions="actionSend"
+        android:inputType="textPersonName"
+        android:text="@string/message" />
+
 </RelativeLayout>
