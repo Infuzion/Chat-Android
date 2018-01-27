@@ -25,11 +25,11 @@ public class ChatActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        linearLayout = (LinearLayout) findViewById(R.id.linLayout);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        linearLayout = findViewById(R.id.linLayout);
         linearLayout.addView(new TextView(getApplicationContext()));
-        button = (Button) findViewById(R.id.sendButton);
-        editText = (EditText) findViewById(R.id.messageText);
+        button = findViewById(R.id.sendButton);
+        editText = findViewById(R.id.messageText);
 
         setSupportActionBar(toolbar);
 
