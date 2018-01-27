@@ -26,13 +26,14 @@ public enum DataType {
     Kick((byte) 0x7);
 
     public byte byteValue;
+
     DataType(byte i) {
         byteValue = i;
     }
 
     public static DataType valueOf(byte messageType) {
-        for(DataType e: values()){
-            if(e.byteValue == messageType){
+        for (DataType e : values()) {
+            if (e.byteValue == messageType) {
                 return e;
             }
         }
